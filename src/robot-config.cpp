@@ -10,16 +10,18 @@ controller joystick(controllerType::primary);
 
 // Drive Motors 
 
-motor frontL(kFrontLeftPort);
-motor midL(kMiddleLeftPort);
-motor backL(kBackLeftPort);
+motor frontL(kFrontLeftPort, kDriveRatio, false);
+motor midL1(kMiddle1LeftPort, kDriveRatio, false);
+motor midL2(kMiddle2LeftPort, kDriveRatio, false);
+motor backL(kBackLeftPort, kDriveRatio, false);
 
-motor frontR(kFrontRightPort);
-motor midR(kMiddleRightPort);
-motor backR(kBackRightPort);
+motor frontR(kFrontRightPort, kDriveRatio, false);
+motor midR1(kMiddle1RightPort, kDriveRatio, false);
+motor midR2(kMiddle2RightPort, kDriveRatio, false);
+motor backR(kBackRightPort, kDriveRatio, false);
 
-motor_group driveLeft(frontL, midL, backL);
-motor_group driveRight(frontR, midR, backR);
+motor_group driveLeft(frontL, midL1, midL2, backL);
+motor_group driveRight(frontR, midR1, midR2, backR);
 
 
 // Sensors 

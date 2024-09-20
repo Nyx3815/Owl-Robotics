@@ -9,11 +9,13 @@ extern controller joystick;
 // Drive Motors 
 
 extern motor frontL;
-extern motor midL;
+extern motor midL1;
+extern motor midL2;
 extern motor backL;
 
 extern motor frontR;
-extern motor midR;
+extern motor midR1;
+extern motor midR2;
 extern motor backR;
 
 extern motor_group driveLeft;
