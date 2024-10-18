@@ -36,7 +36,7 @@ void pre_auton(void) {
   bool isCalibrated = false; // Boolean value for if the IMU is calibrated
 
   intake.setVelocity(100, percentUnits::pct); // Sets the velocity of the intake
-  goalLock.set(false); // Makes sure the goal lock is open at the beginning of the match 
+  goalLock.set(true); // Makes sure the goal lock is open at the beginning of the match 
   
 
   // Clibrates the Inertial sensor if it hasn't been already 
@@ -88,7 +88,7 @@ void usercontrol(void) {
     // Goal lock toggle 
     kGoalLockToggle.pressed([] () { 
       goalLock.set(!goalLock.value()); 
-      printf("Goal lock current value: %s\n", goalLock.value() ? "true" : "false");
+      printf("Goal lock value: %s\n", goalLock.value() ? "true" : "false");
     });
 
 

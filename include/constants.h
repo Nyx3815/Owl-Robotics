@@ -5,25 +5,25 @@
 #define kWheelDiameterInches     4
 #define kEncoderOffsetX          0 // Distance between sensors and edge of robot in the X direction 
 #define kEncoderOffsetY          0 // Distance between sensors and edge of robot in the Y direction 
-#define kGearRatio               (5.0 / 6.0) // Drive gear ratio  
+#define kGearRatio               (23.0 / 33.0) // Drive gear ratio  
 #define kDriveRatio              ratio18_1
 
 
 // Device Ports
 
-#define kFrontLeftPort          PORT1
-#define kMiddle1LeftPort        PORT2
-#define kMiddle2LeftPort        PORT3
-#define kBackLeftPort           PORT4
+#define kFrontLeftPort          PORT20
+#define kMiddle1LeftPort        PORT19
+#define kMiddle2LeftPort        PORT18
+#define kBackLeftPort           PORT17
 
-#define kFrontRightPort         PORT5
-#define kMiddle1RightPort       PORT6
-#define kMiddle2RightPort       PORT7
-#define kBackRightPort          PORT8
+#define kFrontRightPort         PORT11
+#define kMiddle1RightPort       PORT15
+#define kMiddle2RightPort       PORT13
+#define kBackRightPort          PORT16
 
-#define kInertialPort           PORT9
-#define kEncoderPortX           Brain.ThreeWirePort.A
-#define kEncoderPortY           Brain.ThreeWirePort.B
+#define kInertialPort           PORT16
+#define kEncoderPortX           Brain.ThreeWirePort.B
+#define kEncoderPortY           Brain.ThreeWirePort.C
 
 #define kLeftDistancePort       PORT10
 #define kRightDistancePort      PORT11
@@ -33,7 +33,7 @@
 
 #define kIntakeMotorPort        PORT14
 
-#define kGoalLockPort           Brain.ThreeWirePort.C
+#define kGoalLockPort           Brain.ThreeWirePort.A
 
 
 
